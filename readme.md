@@ -1,14 +1,12 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](gh/cover.png)
 
-# WTF Webpack Starter Kit 
+# Example landing page
 
-Simple toolkit for your static websites development.
+It's just simple landing page made for exercise.
 
 ## How to use it?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
-
-## Available scripts
+Just npm install then you have three options:
 
 `npm run start` - runs development mode
 
