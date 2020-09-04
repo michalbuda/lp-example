@@ -146,40 +146,49 @@
   </head>
   <body>
     <header class="header">
-      
+      <div class="header__wraper">
       <div class="logo">
         <img src="/src/assets/img/logo.png" alt="company logo">
       </div>
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__list--item">
-            <a class="navigation__link" href="">Home</a>
+            <a class="navigation__link" href="#">Home</a>
           </li>
           <li class="navigation__list--item">
-            <a class="navigation__link" href="">About us</a>
+            <a class="navigation__link" href="#">About us</a>
           </li>
           <li class="navigation__list--item">
-            <a class="navigation__link" href="">Contact</a>
+            <a class="navigation__link" href="#">Contact</a>
           </li>
-          <li>
-            <button class="cta-secondary">Try for free</button>
+          <li cta-nav class="navigation__list--item">
+            <a href="#" class="cta cta__secondary">
+              <p class="cta__text">Try for free</p>
+            </a>
           </li>
         </ul>
       </nav>
+    </div>
     </header>
     <main class="main">
       <section class="hero">
-        <div class="hero__wraper">
+        
           <section class="hero__content">
             <h1 class="heading1">It’s never been so simple to manage <strong class="heading1 heading1__strong">your finances.</strong></h1>
             <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis morbi nullam molestie. Nec adipiscing porttitor vel quis in in dignissim adipiscing. Dolor, auctor aliquam, commodo bibendum. Cum interdum sed in etiam arcu quisque tellus lacus. Blandit sed enim, proin arcu, ipsum. </p>
-            <button class="cta">Get started</button>
-            <button class="cta cta__secondary">For business</button>
+            <div class="btn-wraper">
+            <a href="#" class="cta">
+              <p class="cta__text">Get started</p>
+            </a>
+            <a href="#" class="cta cta__secondary">
+              <p class="cta__text">For business</p>
+            </a>
+          </div>
           </section>
           <section class="hero__illustration">
-            <img src="/src/assets/img/illustration.svg" alt="illustration with sitting women and flying rocket around her">
+            <img class="illustration" src="/src/assets/img/illustration.svg" alt="illustration with sitting women and flying rocket around her">
           </section>
-        </div>
+        
       </section>
       <div class="scroll-down">
         <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">

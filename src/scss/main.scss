@@ -1,16 +1,143 @@
 @import "~normalize.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik&display=swap');
 @import "_variables";
 //@import "modules/hello.scss";
 
 body {
   background: $bg;
   color: $text-color;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  font-family: $montserrat;
   min-height: 100vh;
-  padding: 0 120px 0 120px;
+  width: 100%;
+  
+}
+.btn-wraper{
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px;
+}
+
+[cta-nav]{
+  margin-left: 0px;
+}
+
+.cta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $button-bg;
+  box-shadow: 0px 56px 80px rgba(42, 255, 204, 0.27), 0px 12.5083px 17.869px rgba(42, 255, 204, 0.160949), 0px 3.72406px 5.32008px rgba(42, 255, 204, 0.109051);
+  color: $text-color;
+  
+  text-decoration: none;
+  
+  
+  &__secondary{
+    background: 0;
+    border: 1px solid $button-border;
+    box-shadow: none;
+    text-decoration: none;
+    margin-left: 32px;
+    
+  }
+  &__secondary:hover{
+      background: $button-hover;
+      color: $white;
+      
+  }
+  &__text{
+    color: $text-color;
+    font-family: $montserrat;
+    font-size: $li;
+    font-weight: bold;
+    margin: 0;
+    padding: 16px 24px;
+  }
+  &__text:hover{
+    color: $white;
+  }
+}
+.cta:hover{
+  background: $button-hover;
+  color: $white;
+}
+
+.header{
+  display: flex;
+  
+  font-weight: bold;
+  
+  &__wraper{
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 120px 24px 120px;
+    width: 100%;
+    background: $white;
+  }
+}
+
+.heading1{
+  font-size: $h1;
+  font-weight: normal;
+  margin: 0;
+  &__strong{
+    font-weight: bold;
+  }
 }
 
 
+.hero{
+  padding-left: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__content{
+    display: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 712px;
+  }
+
+  &__illustration{
+    display: inline;
+  }
+}
+
+.illustration{
+  height: 600px;
+}
+
+.navigation{
+display: inherit;
+align-items: center;
+  &__link{
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  &__list{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    &--item{
+      list-style: none;
+      margin: 0 0 0 24px;
+      
+    }
+  }
+}
+
+
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.paragraph{
+  font-size: $p;
+  font-family: $rubik;
+  margin: 48px 0 0 0;
+}
