@@ -52,6 +52,7 @@ body {
     font-weight: bold;
     margin: 0;
     padding: 16px 24px;
+    min-width: max-content;
   }
   &__text:hover{
     color: $white;
@@ -137,4 +138,10 @@ align-items: center;
   font-size: $p;
   font-family: $rubik;
   margin: 48px 0 0 0;
+}
+
+.scroll-down{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
