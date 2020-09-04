@@ -87,12 +87,16 @@ body {
   }
 }
 
+.heading2{
+  font-size: $h2;
+  margin: 0;
+}
+
 
 .hero{
   padding: 0 120px 0 120px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   margin-top: 42px;
 
@@ -101,6 +105,10 @@ body {
     flex-direction: column;
     align-items: flex-start;
     max-width: 712px;
+  }
+  &__illustration{
+    display: flex;
+    justify-content: flex-end;
   }
 
   
@@ -138,7 +146,25 @@ align-items: center;
   font-size: $p;
   font-family: $rubik;
   margin: 48px 0 0 0;
+  &__column{
+    margin-top: 24px;
+  }
 }
+
+.perks{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 32px;
+  margin: 0 120px 0 120px;
+  &__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+  }
+}
+
 
 .scroll-down{
   display: flex;
