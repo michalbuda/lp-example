@@ -92,6 +92,56 @@ body {
   padding: 64px 120px;
 }
 
+[top-margin]{
+  margin-top: 32px;
+}
+
+.footer{
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  padding: 64px 120px;
+  &__down{
+    display: flex;
+  }
+  &__items{
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    &--margin{
+      margin-top: 32px;
+    }
+  }
+  &__columns{
+    display: flex;
+    flex-direction: row;
+  }
+  &__title{
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+  &__list{
+    list-style: none;
+    margin: 0 0 0 160px;
+    padding: 0;
+    &--item{
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &--margin{
+    margin-left: 24px;
+  }
+  &__terms{
+    font-weight: bold;
+    &--margin{
+      margin-left: 32px;
+    }
+  }
+}
+
 .form{
   display: grid;
   grid-template-areas: 'form__name form__name'
@@ -169,7 +219,15 @@ body {
   
 }
 
-
+.input-styles{
+  width: 624px;
+  border-radius: 0;
+  border-color: #2BFFCC;
+  border-style: solid;
+  font-weight: bold;
+  color: $text-color;
+  padding: 18px 24px;
+}
 
 .navigation{
 display: inherit;

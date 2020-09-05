@@ -251,14 +251,14 @@
         <form class="form" method="POST" action="http://dev.cotenfrontend.pl/">
           <p class="form__name">
             <label for="name"></label>
-            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input class="input-styles" type="text" name="name" id="name" placeholder="Name" required>
           </p>
           <p class="form__email">
             <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input class="input-styles" type="email" name="email" id="email" placeholder="Email" required>
           </p>
           <p class="form__message"> 
-            <label for="message"><textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea></label>
+            <label for="message"><textarea class="input-styles" name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea></label>
           </p>
           <p class="form__agreement">
             <label for="agreement"><input type="checkbox" name="agreement" id="agreement" required>Fuga ex ut voluptatibus. In rerum quos nulla recusandae tempore optio corrupti. Ea sit minus dolore et consequatur illo illum temporibus. Consequatur excepturi vel dolorum neque. Quia magnam velit et qui. Nostrum quo quasi fugiat iusto sunt voluptatum eligendi sequi.</label>
@@ -271,51 +271,59 @@
     </main>
     <footer class="footer">
       
-      <section class="footer__columns">
-        <div class="logo">
-          <img src="/src/assets/img/logo.png" alt="company logo">
-        </div>
-        <ul class="footer__list">
-          <li class="">Info</li>
-          <li><a href="">About us</a></li>
-          <li><a href="">Methodology</a></li>
-          <li><a href="">Feedback</a></li>
-          <li><a href="">Contact us</a></li>
-        </ul>
-        <ul class="footer__list">
-          <li class="">Products</li>
-          <li><a href="">Pellentesque eu sem.</a></li>
-          <li><a href="">Sit nibh urna vitae id.</a></li>
-          <li><a href="">Quis lorem tortor.</a></li>
-          <li><a href="">Pellentesque eu sem.</a></li>
-          <li><a href="">Sit nibh urna vitae id.</a></li>
-          <li><a href="">Quis lorem tortor.</a></li>
-        </ul>
-        <ul class="footer__list">
-          <li class="">Follow us</li>
-          <li>
-            <img src="/src/assets/icons/tt-icon.png" alt="twitter icon">
-            <a href="">Twitter</a>
-          </li>
-          <li>
-            <img src="/src/assets/icons/fb-icon.png" alt="twitter icon">
-            <a href="">Facebook</a>
-          </li>
-          <li>
-            <img src="/src/assets/icons/ig-icon.png" alt="twitter icon">
-            <a href="">Instagram</a>
-          </li>
-          <li>
-            <img src="/src/assets/icons/gh-icon.png" alt="twitter icon">
-            <a href="">Github</a>
-          </li>
+      <section class="footer__items">
+        <section class="footer__logo">
+          <div class="logo">
+            <img src="/src/assets/img/logo.png" alt="company logo">
+          </div>
+        </section>
+        <section class="footer__columns">
+          <ul class="footer__list">
+            <li class="footer__title">Info</li>
+            <li  class="footer__list--item"><a class="navigation__link" href="#">About us</a></li>
+            <li class="footer__list--item"><a class="navigation__link" href="#">Methodology</a></li>
+            <li class="footer__list--item"><a class="navigation__link" href="#">Feedback</a></li>
+            <li class="footer__list--item"><a class="navigation__link" href="#">Contact us</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__title">Products</li>
+            <li  class="footer__list--item"><a class="navigation__link" href="#">Pellentesque eu sem.</a></li>
+            <li class="footer__list--item"><a class="navigation__link" href="#">Sit nibh urna vitae id.</a></li>
+            <li class="footer__list--item"><a class="navigation__link" href="#">Quis lorem tortor.</a></li>
+            <li class="footer__list--item"><a class="navigation__link" href="#">Pellentesque eu sem.</a></li>
+            <li class="footer__list--item"><a class="navigation__link" href="#">Sit nibh urna vitae id.</a></li>
+            <li class="footer__list--item"><a class="navigation__link" href="#">Quis lorem tortor.</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__title">Follow us</li>
+            <li  class="footer__list--item">
+              <img src="/src/assets/icons/tt-icon.png" alt="twitter icon">
+              <a class="navigation__link footer--margin" href="#">Twitter</a>
+            </li>
+            <li class="footer__list--item">
+              <img src="/src/assets/icons/fb-icon.png" alt="twitter icon">
+              <a class="navigation__link footer--margin" href="#">Facebook</a>
+            </li>
+            <li class="footer__list--item">
+              <img src="/src/assets/icons/ig-icon.png" alt="twitter icon">
+              <a class="navigation__link footer--margin" href="#">Instagram</a>
+            </li>
+            <li class="footer__list--item">
+              <img src="/src/assets/icons/gh-icon.png" alt="twitter icon">
+              <a class="navigation__link footer--margin" href="#">Github</a>
+            </li>
 
-        </ul>
+          </ul>
+        </section>
       </section>
-      <section class="footer__down">
-        <p class="">BrandName © All rights reserved</p>
-        <a href="">Terms</a>
-        <a href="">Privacy policy</a>
+      <section class="footer__items footer__items--margin">
+        <section class="footer__brand">
+          <p class="footer__title">BrandName © All rights reserved</p>
+        </section>
+        <section class="footer__terms">
+          <a class="navigation__link" href="#">Terms</a>
+          <a class="navigation__link footer__terms--margin" href="#">Privacy policy</a>
+        </section>
       </section>
     </footer>
   </body>
