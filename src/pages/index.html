@@ -223,44 +223,48 @@
           <img src="/src/assets/img/illustration2.png" alt="illustration with system window, glowing bulb, post envelope, books and chair">
         </section>
         <section class="advantages__description">
-          <h1 class="heading1">The best<strong class="heading1 heading1__strong">world solutions</strong></h1>
+          <h1 class="heading1">The best <strong class="heading1 heading1__strong">world solutions</strong></h1>
           <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet faucibus nunc odio cras bibendum elit ipsum fermentum, semper. Sem bibendum enim nec, quis. In varius imperdiet eu sem. Nulla diam velit urna non blandit. Nibh massa tortor velit quis elementum vitae cursus ipsum. Risus massa mattis nibh facilisis sollicitudin nunc sed morbi amet. </p>
         </section>
       </section>
       <section class="testimonials">
-        <h1 class="heading1">They <strong class="heading1 heading1__strong">trusted us</strong> so why not you</h1>
-        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus nunc, mollis nisl ultrices lectus.</p>
-        <div class="slider">
-          <button class="btn-slider"><img src="/src/assets/icons/arrow_left.svg" alt="arrow left"></button>
-          <button class="btn-slider"><img src="/src/assets/icons/arrow_right.svg" alt="arrow right"></button>
-        </div>
+        <section class="testimonials__description">
+          <h1 class="heading1">They <strong class="heading1 heading1__strong">trusted us</strong> so why not you</h1>
+          <p class="paragraph paragraph__margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus nunc, mollis nisl ultrices lectus.</p>
+        </section>
+        <section class="testimonials__slider">
+          <div class="slider">
+            <button class="btn-slider"><img src="/src/assets/icons/arrow_left.svg" alt="arrow left"></button>
+            <button class="btn-slider"><img src="/src/assets/icons/arrow_right.svg" alt="arrow right"></button>
+          </div>
+        </section>
       </section>
       <section class="cta-section">
         <h1 class="heading1 heading1__strong">Give us a chance for 30 days for free</h1>
-        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A et enim enim, justo ut est ultricies nulla.</p>
-        <a href="#" class="cta">
+        <p class="paragraph paragraph__margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A et enim enim, justo ut est ultricies nulla.</p>
+        <a href="#" class="cta cta__margin">
           <p class="cta__text">Sign up</p>
         </a>
       </section>
-      <section class="question form">
+      <section class="question-form">
         <h1 class="heading1">Have a question? Don’t mind asking us</h1>
-        <form method="POST" action="http://dev.cotenfrontend.pl/">
-          <p>
+        <form class="form" method="POST" action="http://dev.cotenfrontend.pl/">
+          <p class="form__name">
             <label for="name"></label>
             <input type="text" name="name" id="name" placeholder="Name" required>
           </p>
-          <p>
+          <p class="form__email">
             <label for="email"></label>
             <input type="email" name="email" id="email" placeholder="Email" required>
           </p>
-          <p>
+          <p class="form__message"> 
             <label for="message"><textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea></label>
           </p>
-          <p>
+          <p class="form__agreement">
             <label for="agreement"><input type="checkbox" name="agreement" id="agreement" required>Fuga ex ut voluptatibus. In rerum quos nulla recusandae tempore optio corrupti. Ea sit minus dolore et consequatur illo illum temporibus. Consequatur excepturi vel dolorum neque. Quia magnam velit et qui. Nostrum quo quasi fugiat iusto sunt voluptatum eligendi sequi.</label>
           </p>
-          <p>
-            <input type="submit" value="Send">
+          <p class="cta cta__form" class="form__submit">
+            <input class="cta__text cta__form" type="submit" value="Send">
           </p>
         </form>
       </section>

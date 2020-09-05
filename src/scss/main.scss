@@ -11,6 +11,14 @@ body {
   width: 100%;
   
 }
+
+.advantages{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 120px 120px 0 120px;
+}
+
 .btn-wraper{
   display: flex;
   flex-direction: row;
@@ -57,11 +65,57 @@ body {
   &__text:hover{
     color: $white;
   }
+
+  &__margin{
+    margin-top: 64px;
+  }
+  &__form{
+    border: 0;
+    background-color: $button-bg;
+  }
+  &__form:hover{
+    border: 0;
+    background: $button-hover;
+    color: $white;
+  }
 }
 .cta:hover{
   background: $button-hover;
   color: $white;
 }
+
+.cta-section{
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 120px;
+}
+
+.form{
+  display: grid;
+  grid-template-areas: 'form__name form__name'
+  'form__email form__email'
+  'form__message form__message'
+  'form__agreement form__submit';
+  &__name{
+    grid-area: form__name;
+  }
+  &__email{
+    grid-area: form__email;
+    }
+  &__message{
+    grid-area: form__message;
+    }
+  &__agreement{
+    grid-area: form__agreement;
+    }
+  &__submit{
+    grid-area: form__submit;
+    }
+  
+}
+
 
 .header{
   display: flex;
@@ -89,7 +143,8 @@ body {
 
 .heading2{
   font-size: $h2;
-  margin: 0;
+  font-weight: normal;
+  margin: 32px 0 0 0;
 }
 
 
@@ -149,13 +204,16 @@ align-items: center;
   &__column{
     margin-top: 24px;
   }
+  &__margin{
+    margin-top: 32px;
+  }
 }
 
 .perks{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 32px;
-  margin: 0 120px 0 120px;
+  margin: 120px 120px 0 120px;
   &__column{
     display: flex;
     flex-direction: column;
@@ -170,4 +228,23 @@ align-items: center;
   display: flex;
   justify-content: center;
   margin-top: 100px;
+}
+
+.testimonials{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: 120px 120px 0 120px;
+  &__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.question-form{
+  margin: 120px 120px 0 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
 }
