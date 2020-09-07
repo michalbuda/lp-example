@@ -143,26 +143,35 @@ body {
 }
 
 .form{
-  display: grid;
-  grid-template-areas: 'form__name form__name'
-  'form__email form__email'
-  'form__message form__message'
-  'form__agreement form__submit';
-  &__name{
-    grid-area: form__name;
+  // display: grid;
+  // grid-template-areas: 'form__name form__name'
+  // 'form__email form__email'
+  // 'form__message form__message'
+  // 'form__agreement form__submit';
+  // &__name{
+  //   grid-area: form__name;
+  // }
+  // &__email{
+  //   grid-area: form__email;
+  //   }
+  // &__message{
+  //   grid-area: form__message;
+  //   }
+  // &__agreement{
+  //   grid-area: form__agreement;
+  //   }
+  // &__submit{
+  //   grid-area: form__submit;
+  //   }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__footer{
+    display: flex;
+    flex-direction: row;
+    max-width: 624px;
   }
-  &__email{
-    grid-area: form__email;
-    }
-  &__message{
-    grid-area: form__message;
-    }
-  &__agreement{
-    grid-area: form__agreement;
-    }
-  &__submit{
-    grid-area: form__submit;
-    }
   
 }
 
@@ -220,13 +229,33 @@ body {
 }
 
 .input-styles{
-  width: 624px;
+  width: 572px;
+  border: 1px;
   border-radius: 0;
   border-color: #2BFFCC;
   border-style: solid;
   font-weight: bold;
   color: $text-color;
   padding: 18px 24px;
+  &__checkbox input[type='checkbox']{
+    opacity: 0;
+  }
+  &__checkbox label::before{
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-color: $white;
+    border: 1px;
+    border-style: solid;
+    border-color: $button-bg;
+    border-radius: 50%;
+    box-shadow: 0px 56px 80px rgba(42, 255, 204, 0.27), 0px 12.5083px 17.869px rgba(42, 255, 204, 0.160949), 0px 3.72406px 5.32008px rgba(42, 255, 204, 0.109051);
+  }
+  &__checkbox-custom{
+    position: absolute;
+    
+  }
 }
 
 .navigation{

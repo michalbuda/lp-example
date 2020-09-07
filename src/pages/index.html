@@ -248,7 +248,7 @@
       </section>
       <section class="question-form">
         <h1 class="heading1">Have a question? Don’t mind asking us</h1>
-        <form class="form" method="POST" action="http://dev.cotenfrontend.pl/">
+        <form class="form" method="POST" action="">
           <p class="form__name">
             <label for="name"></label>
             <input class="input-styles" type="text" name="name" id="name" placeholder="Name" required>
@@ -260,12 +260,18 @@
           <p class="form__message"> 
             <label for="message"><textarea class="input-styles" name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea></label>
           </p>
-          <p class="form__agreement">
-            <label for="agreement"><input type="checkbox" name="agreement" id="agreement" required>Fuga ex ut voluptatibus. In rerum quos nulla recusandae tempore optio corrupti. Ea sit minus dolore et consequatur illo illum temporibus. Consequatur excepturi vel dolorum neque. Quia magnam velit et qui. Nostrum quo quasi fugiat iusto sunt voluptatum eligendi sequi.</label>
-          </p>
-          <p class="cta cta__form" class="form__submit">
-            <input class="cta__text cta__form" type="submit" value="Send">
-          </p>
+          <div class="form__footer">
+            
+              <div class="input-styles__checkbox">
+                <!-- <span class="input-styles__checkbox-custom"></span> -->
+                <input style="position: absolute;" type="checkbox" name="agreement" id="agreement" required>
+                <label  for="agreement">Fuga ex ut voluptatibus. In rerum quos nulla recusandae tempore optio corrupti. Ea sit minus dolore et consequatur illo illum temporibus. Consequatur excepturi vel dolorum neque. Quia magnam velit et qui. Nostrum quo quasi fugiat iusto sunt voluptatum eligendi sequi.</label>
+              </div>
+            
+            <p class="form__submit">
+              <input class="cta cta__text cta__form" type="submit" value="Send">
+            </p>
+          </div>
         </form>
       </section>
     </main>
