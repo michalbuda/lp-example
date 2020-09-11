@@ -30,6 +30,16 @@ body {
   margin-left: 0px;
 }
 
+.carousel{
+  width: 1200px;
+  &__cell{
+    width: 270px;
+    height: 170px;
+    margin-right: 48px;
+    background-color: black;
+  }
+}
+
 .cta{
   display: flex;
   justify-content: center;
@@ -91,6 +101,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 64px 120px;
+  margin-top: 120px;
 }
 
 [top-margin]{
@@ -342,14 +353,22 @@ align-items: center;
 }
 
 .testimonials{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  // display: grid;
+  // grid-template-rows: 1fr 1fr;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   margin: 120px 120px 0 120px;
   &__description{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  &__slider{
+    margin-top: 64px;
+  }
+  
 }
 
 .question-form{

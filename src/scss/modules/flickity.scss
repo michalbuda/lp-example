@@ -45,14 +45,15 @@ https://flickity.metafizzy.co
 
 .flickity-button {
   position: absolute;
-  background-color: #2F9FDD;
+  background-color: $button-bg;
   border-radius: 0%;
   border: none;
-  color: #333;
+  color: $text-color;
 }
 
 .flickity-button:hover {
-  background: white;
+  background: $button-hover;
+  color: white;
   cursor: pointer;
 }
 
