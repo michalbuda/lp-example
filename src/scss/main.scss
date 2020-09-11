@@ -1,6 +1,7 @@
 @import "~normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik&display=swap');
 @import "_variables";
+@import "modules/flickity.scss";
 //@import "modules/hello.scss";
 
 body {
@@ -171,6 +172,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     min-width: 624px;
   }
   &__cell{

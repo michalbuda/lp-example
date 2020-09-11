@@ -1,4 +1,5 @@
 import '../scss/main.scss';
+import Flickity from 'flickity';
 
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
@@ -6,4 +7,14 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-console.log('HELLO 🚀')
+console.log('HELLO 🚀');
+
+const slider = document.querySelector('.carousel');
+const flck = new Flickity( slider, {
+    groupCells: 1,
+    freeScroll: true,
+    autoPlay: 2000,
+});
+
+flck;
+
