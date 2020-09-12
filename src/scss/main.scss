@@ -4,6 +4,10 @@
 @import "modules/flickity.scss";
 //@import "modules/hello.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $bg;
   color: $text-color;
@@ -27,7 +31,7 @@ body {
 }
 
 [cta-nav]{
-  margin-left: 0px;
+  
 }
 
 .carousel{
@@ -102,6 +106,15 @@ body {
   align-items: center;
   padding: 64px 120px;
   margin-top: 120px;
+}
+
+.cta-header{
+  
+  border: none;
+}
+
+.cta-nomargin{
+  margin-left: 0px;
 }
 
 [top-margin]{
@@ -310,6 +323,9 @@ align-items: center;
       list-style: none;
       margin: 0 0 0 24px;
       
+    }
+    &--item:hover{
+      border-bottom: solid;
     }
   }
 }
