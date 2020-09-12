@@ -284,7 +284,9 @@ body {
     margin: 8px 16px 0 0;
     height: 16px;
     width: 16px;
-    background-color: $white;
+    background: opacity($color: #000000) url(/src/assets/icons/checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     border: 1px;
     border-style: solid;
     border-color: $button-bg;
@@ -298,7 +300,8 @@ body {
     background: url(/src/assets/icons/checked.svg);
     background-repeat: no-repeat;
     background-position: center;
-    
+    border: 1px;
+    border-style: solid;
     border-color: $button-border;
     background-color: $button-bg;
   }
@@ -371,11 +374,22 @@ align-items: center;
   }
 }
 
+@keyframes mouse {
+      0%{
+        transform: translate(0, -20px);
+      }
+      100%{
+        transform: translate(0, 0);
+      }
+}
 
 .scroll-down{
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  &__js{
+    animation: mouse 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate;
+  }
 }
 
 .testimonials{
