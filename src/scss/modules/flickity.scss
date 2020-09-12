@@ -49,6 +49,7 @@ https://flickity.metafizzy.co
   border-radius: 0%;
   border: none;
   color: $text-color;
+  transition: .3s ease-out;
 }
 
 .flickity-button:hover {
