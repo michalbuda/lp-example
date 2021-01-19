@@ -298,7 +298,7 @@ body {
     margin: 8px 16px 0 0;
     height: 16px;
     width: 16px;
-    background: opacity($color: #000000) url(/src/assets/icons/checked.svg);
+    background: opacity($color: #000000) url(../assets/icons/checked.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: 1px;
@@ -311,7 +311,7 @@ body {
     position: absolute;
   }
   &__checkbox input[type='checkbox']:checked + label::before{
-    background: url(/src/assets/icons/checked.svg);
+    background: url(../assets/icons/checked.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: 1px;
