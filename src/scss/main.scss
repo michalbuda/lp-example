@@ -22,12 +22,25 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   margin: 120px 120px 0 120px;
+  
+
+
   // @media (max-width: 1024px){
   //   margin: 120px 32px 0 32px;
   // }
   // @media (max-width: 764px){
   //   margin: 64px 16px 0 16px;
   // }
+  
+  @media (min-width: 0px) and (max-width: $breakpoint-medium){
+      margin: 64px 30px 0 30px;
+      grid-template-columns: 1fr;
+      row-gap: 32px;
+    }
+  @media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large){
+      margin: 64px 48px 0 48px;
+      grid-template-columns: 1fr 1fr;
+    }
 }
 
 .btn-wraper{
@@ -248,6 +261,12 @@ body {
   &__strong{
     font-weight: bold;
   }
+  @media (min-width: 0px) and (max-width: $breakpoint-medium){
+    font-size: $h3;
+  }
+  @media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large){
+    font-size: $h2;
+  }
 }
 
 .heading2{
@@ -279,6 +298,26 @@ body {
   // }
   
 }
+
+.image{
+  display: block;
+  &--small{
+    display: none;
+  }
+  // @media (min-width: 0px) and (max-width: $breakpoint-medium){
+
+  // }
+  // @media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large){
+
+  // }
+  @media (max-width: 1024px){
+    display: none;
+    &--small{
+      display: block;
+    }
+  }
+}
+
 
 .input-styles{
   width: 572px;
@@ -383,9 +422,12 @@ align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
-
   }
+  @media (min-width: 0px) and (max-width: $breakpoint-medium){
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  
 }
 
 @keyframes mouse {
