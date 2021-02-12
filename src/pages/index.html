@@ -151,7 +151,26 @@
         <img src="../assets/img/logo.png" alt="company logo">
       </a>
       <nav class="navigation">
-        <button class="hamburger"></button>
+        <div class="navigation__hamburger">
+          <ul class="navigation__hambuger-list">
+            <li class="navigation__hambuger-list--item">
+              <a class="navigation__link" href="#">Home</a>
+            </li>
+            <li class="navigation__hambuger-list--item">
+              <a class="navigation__link" href="#">About us</a>
+            </li>
+            <li class="navigation__hambuger-list--item">
+              <a class="navigation__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <button class="hamburger hamburger__js">
+          <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="topBar" class="topBar" width="40" height="2" fill="#082F25"/>
+            <rect id="midBar" y="14" width="40" height="2" fill="#082F25"/>
+            <rect id="botBar" y="28" width="40" height="2" fill="#082F25"/>
+          </svg>
+          </button>
         <ul class="navigation__list">
           <li class="navigation__list--item">
             <a class="navigation__link" href="#">Home</a>
